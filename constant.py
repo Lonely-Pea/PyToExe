@@ -73,16 +73,16 @@ INFO_LABEL_TEXTS = [
 
 ABOUT_TEXT = """
 制作人：Lonely-Pea
-版本：Build 230813 v1.1.0
+版本：Build 230815 v1.2.0
 
-相较于v1.0.0新增：
-1.增加了生成代码功能并且可以通过修改代码来修改生成方式，也可以直接修改代码框的区域来生成。
-2.增加了左下角帮助信息一键全部查看。
-3.更改了左下角提示生成方式。
-4.修改了文件或文件夹目录内有空格不能打包成功的bug
-（小版本更新）
+相较于v1.1.0新增：
+1.修复了左下角帮助信息的部分bug
+2.新增了检查更新界面
+3.修改了安装pyinstaller和nuitka和打包程序为后台静默运行
 
 详见左下角！
 感谢你对本软件的使用！
-
 """
+
+CHECK_UPDATE_WEBSITE = "https://lonely-pea.github.io/PyToExeWeb/update.html"
+OFFICIAL_WEBSITE = "https://lonely-pea.github.io/PyToExeWeb"
