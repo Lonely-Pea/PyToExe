@@ -8,6 +8,13 @@ import random
 
 from threading import Thread
 
+import requests
+from bs4 import BeautifulSoup
+
+from configparser import ConfigParser
+
+import webbrowser as wbr
+
 from constant import *
 from function import *
 
@@ -69,6 +76,9 @@ class Desktop(tk.Frame):  # 根窗口界面
 
         self.entry_var = tk.StringVar()
 
+        self.ini = ConfigParser()
+        self.ini.read("Data/data.ini")
+
         # 设置
         self.set_place()
         self.combobox()
@@ -79,6 +89,7 @@ class Desktop(tk.Frame):  # 根窗口界面
         self.console_order_entry()
         self.install()
         self.info()
+        self.check_update_frame()
 
     def combobox(self):
         combobox1 = ttk.Combobox(self, textvariable=self.combobox1_var, values=COMBOBOX_TEXT[0], state="readonly")
@@ -249,16 +260,16 @@ class Desktop(tk.Frame):  # 根窗口界面
 
     def change_info_label(self):  # 改变左下角提示文字
         entry = ttk.Entry(self, textvariable=self.entry_var)
-        entry.place(x=OPTION_GAP, y=WINDOW_HEIGHT - OPTION_GAP - ENTRY_HEIGHT, width=WINDOW_WIDTH - BUTTON_WIDTH * 2 - OPTION_GAP * 2, height=ENTRY_HEIGHT)
+        entry.place(x=OPTION_GAP, y=WINDOW_HEIGHT - OPTION_GAP - ENTRY_HEIGHT, width=WINDOW_WIDTH - BUTTON_WIDTH * 2 - OPTION_GAP * 4, height=ENTRY_HEIGHT)
 
         button = ttk.Button(self, text="查看全部帮助", cursor="hand2", command=lambda: self.show_all_info())
-        button.place(x=WINDOW_WIDTH - BUTTON_WIDTH * 2, y=WINDOW_HEIGHT - OPTION_GAP - BUTTON_HEIGHT, width=BUTTON_WIDTH * 2 + OPTION_GAP, height=BUTTON_HEIGHT)
+        button.place(x=WINDOW_WIDTH - BUTTON_WIDTH * 2 - OPTION_GAP * 2, y=WINDOW_HEIGHT - OPTION_GAP - BUTTON_HEIGHT, width=BUTTON_WIDTH * 2 + OPTION_GAP, height=BUTTON_HEIGHT)
 
         n = 0
         while True:
             n_ = random.randint(0, len(INFO_LABEL_TEXTS)-1)
             if n_ == n:
-                break
+                continue
             else:
                 n = n_
                 self.entry_var.set(INFO_LABEL_TEXTS[n])
@@ -274,6 +285,7 @@ class Desktop(tk.Frame):  # 根窗口界面
         toplevel = ToplevelInfo(master=self.master)
 
     def make_exe(self):  # 生成
+        global file_output_path
         file_from_path = self.file_from_path_var.get()
         file_output_path = self.file_output_path_var.get()
         file_icon_path = self.file_icon_path_var.get()
@@ -292,15 +304,28 @@ class Desktop(tk.Frame):  # 根窗口界面
                              if_cmd)
             button_3.config(command=lambda: msg.showinfo(title="提示", message="当前转换中！请勿重复操作！"))
 
+            # 新建打包线程
+            thread_1 = Thread(target=self.make_exe_pyinstaller, args=(text, ))
+            thread_2 = Thread(target=self.make_exe_nuitka, args=(self.console_order_var.get(), ))
+
+            # 提示
+            msg.showinfo(title="提示", message="软件将会在后台打包，期间你不能再次打包！")
+
             if self.console_order_var.get() == "":
-                os.system(text)
+                thread_1.start()
 
             else:
-                os.system(self.console_order_var.get())
+                thread_2.start()
 
-            button_3.config(command=lambda: self.make_exe())
-            if tool == COMBOBOX_TEXT[1][1]:
-                msg.showinfo(title="提示", message="已经成功保存到软件所在目录！请注意查看！文件夹名称与.py文件名称相同！")
+    def make_exe_pyinstaller(self, text):
+        os.system(text)
+        msg.showinfo(title="提示", message="已经成功保存到软件所在目录！请注意查看！")
+        button_3.config(command=lambda: self.make_exe())
+
+    def make_exe_nuitka(self, text):
+        os.system(text)
+        msg.showinfo(title="提示", message="已经保存到%s内！请注意查看！" % file_output_path)
+        button_3.config(command=lambda: self.make_exe())
 
     def make_code(self):  # 生成代码
         file_from_path = self.file_from_path_var.get()
@@ -330,9 +355,39 @@ class Desktop(tk.Frame):  # 根窗口界面
             os.system("explorer \"%s\"" % file_output_path.replace("/", "\\"))
 
     def install(self):  # 安装
-        msg.showinfo(title="提示", message="接下来将安装pyinstaller和nuitka，如果你已安装可以忽略。")
+        thread_ = Thread(target=self.install_, args=())
+        thread_.start()
+
+    def install_(self):
+        msg.showinfo(title="提示", message="接下来将在后台安装pyinstaller和nuitka，如果你已安装可以忽略。")
         install_pyinstaller_and_nuitka()
         msg.showinfo(title="提示", message="程序运行完毕，请对照cmd窗口的消息来判断是否安装成功！")
+
+    def check_update_frame(self):  # 检查更新界面
+        global button_check_update
+        thread_check_update = Thread(target=self.check_update, args=())
+        button_check_update = ttk.Button(self, text="检查更新", cursor="hand2", command=lambda: thread_check_update.start())
+        button_check_update.place(x=WINDOW_WIDTH - BUTTON_WIDTH * 2 - OPTION_GAP * 2, y=OPTION_GAP, width=BUTTON_WIDTH, height=BUTTON_HEIGHT)
+
+    def check_update(self):
+        thread_check_update = Thread(target=self.check_update, args=())
+        button_check_update.config(command=lambda: msg.showinfo(title="提示", message="检查更新中！请勿反复检查！"))
+        msg.showinfo(title="提示", message="即将检查更新！按确定继续！")
+        con = requests.get(CHECK_UPDATE_WEBSITE)
+        con.encoding = "utf-8"
+        texts = con.text
+        result = BeautifulSoup(texts, "html.parser")
+        div_update = result.find("div", attrs={"class": "update"})
+        div_update_version = div_update.find("p")
+        print(div_update_version.text)
+        print(self.ini.get("VERSION", "version"))
+
+        if div_update_version.text == self.ini.get("VERSION", "version"):
+            msg.showinfo(title="提示", message="你的版本为最新版！无需安装新版！")
+        else:
+            msg.showinfo(title="提示", message="发现新版本！版本号：%s。点击确定将跳转至浏览器下载！" % div_update_version.text)
+            wbr.open(result.find("div", attrs={"class": "download"}).find("p").text)
+        button_check_update.config(command=lambda: thread_check_update.start())
 
 
 class ToplevelAbout(tk.Toplevel):
