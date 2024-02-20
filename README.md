@@ -1,6 +1,7 @@
 # PyToExe
 
-> <a herf="./README_CN.md">中文说明</a> || <a herf="/README.md">English</a>
+> (中文说明)![./README_CN.md] || (english)![./README.md]
+> 译者：@BiliBiliSmallball
 > Translated by @BiliBiliSmallball
 
 ## Introduction
@@ -188,7 +189,7 @@ Look at the codes above.<br>
 We first make a temporary variable called _n_.<br>
 Then, we build a _while_ circulate.<br>
 In this circulate, we first make a random number as the index of the list.<br>
-If the random number _n\__ is as same as _n_, we just "while" again.<br>
+If the random number \_n\__ is as same as \_n_, we just "while" again.<br>
 Then we use the index to choose the element in the list and take it as the element of the variable self.entry_var.<br>
 Then, we use the module time and its function sleep() to pause the thread for 10 seconds.<br>
 Then, the next "while" again.<br>

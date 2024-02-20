@@ -1,7 +1,8 @@
 # PyToExe
 
-> <a herf="./README_CN.md">中文说明</a> || <a herf="/README.md">English</a>
+> (中文说明)![./README_CN.md] || (english)![./README.md]
 > 译者：@BiliBiliSmallball
+> Translated by @BiliBiliSmallball
 
 ## 软件总览
 
@@ -45,7 +46,9 @@ PyToExe 是基于 Python 的软件。<br>
 
 ### 如何使用该程序
 
-点击 `main.py`使用<div style="font-size:10px">为啥这个项目不打包一下？</div>
+点击 `main.py`使用
+
+<h5>为啥这个项目不打包一下？</h5>
 
 ### File main.py
 
