@@ -1,6 +1,6 @@
 # PyToExe
 
-> <a herf="./README.md">中文说明</a> || <h5>english</h5>  
+> [中文说明](./README_CN.md) || **English**
 > 译者：@BiliBiliSmallball  
 > Translated by @BiliBiliSmallball
 
