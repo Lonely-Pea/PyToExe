@@ -204,11 +204,11 @@ while True:
 
 我们可以更改` tk 类`中元素的`justify`属性的值来改变标签内容。<br>
 例如:<br>
-`
+~~~
 text = tk.Label(self, text=ABOUT_TEXT, justify="left")
 
 text.place(x=0, y=0, width=TOPLEVEL_WIDTH \* 3)
-`
+~~~<br>
 以下是 _justify_ 和 _anchor_ 的区别：<br>
 
 | 元素    | 预设值                                             | 类别         |
