@@ -112,7 +112,7 @@ if tool == COMBOBOX_TEXT[1][1]:  # pyinstaller called
 
 #### Window(tk.Tk)
 
-在这个类中，有一个名为 set（self） 的函数可以设置根窗口。
+在这个类中，有一个名为 `set(self)` 的函数可以设置根窗口。
 
 以下是代码的解释：<br>
 
@@ -160,15 +160,14 @@ self.size = "%dx%d+%d+%d" % (WINDOW_WIDTH, WINDOW_HEIGHT, self.x, self.y)
 
 我想你知道如何用 tkinter 制作接口，所以我就不介绍搭建 tkinter 接口的功能了。（真正的原因是我有点懒。<b>译者注：看出来了</b><br>
 
-现在我只介绍函数 info（）。先看一下代码：<br>
-
-> thread_change = Thread(target=self.change_info_label, args=())
->
-> thread_change.start()
-
+现在我只介绍函数` info()`。先看一下代码：<br>
+~~~
+thread_change = Thread(target=self.change_info_label, args=())
+thread_change.start()
+~~~
 这些代码是为了构建一个 now 线程，使主程序不会停滞（？）。
 
-我们得到这个函数叫做一个名为 self.change_info_label（） 的新函数。<br>
+我们得到这个函数叫做一个名为 `self.change_info_label()` 的新函数。<br>
 然后让我们看看这个函数。<br>
 
 ###### self.change_info_label()
@@ -205,11 +204,11 @@ while True:
 
 我们可以更改` tk 类`中元素的`justify`属性的值来改变标签内容。<br>
 例如:<br>
+`
+text = tk.Label(self, text=ABOUT_TEXT, justify="left")
 
-> text = tk.Label(self, text=ABOUT_TEXT, justify="left")
->
-> text.place(x=0, y=0, width=TOPLEVEL_WIDTH \* 3)
-
+text.place(x=0, y=0, width=TOPLEVEL_WIDTH \* 3)
+`
 以下是 _justify_ 和 _anchor_ 的区别：<br>
 
 | 元素    | 预设值                                             | 类别         |
