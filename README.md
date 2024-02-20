@@ -1,6 +1,6 @@
 # PyToExe
 
-> [中文说明](./README_CN.md) || **English**
+> [中文说明](./README_CN.md) || **English**  
 > 译者：@BiliBiliSmallball  
 > Translated by @BiliBiliSmallball
 
