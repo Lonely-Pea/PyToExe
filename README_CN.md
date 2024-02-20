@@ -1,7 +1,7 @@
 # PyToExe
 
-> (中文说明)![./README_CN.md] || (english)![./README.md]
-> 译者：@BiliBiliSmallball
+> <h5>中文说明</h5> || <a herf="./README.md">english</a>  
+> 译者：@BiliBiliSmallball  
 > Translated by @BiliBiliSmallball
 
 ## 软件总览
@@ -66,7 +66,7 @@ if __name__ == "__main__":
 
 ### File constant.py
 
-在项目`constant.py`中,我写了一些设置参数在里面.<br>
+在项目`constant.py`中,我写了一些参数设置在里面.<br>
 比如:<br>
 
 ```python
@@ -86,7 +86,7 @@ INSTALL_TEXT = [
 > if_cmd=（False，False））
 
 以构建可执行程序。<br>
-我们只是将参数转换为代码并查看最终结果*test*<br>
+我们只是将参数转换为代码并查看最终结果`*test*`<br>
 例如：
 
 ```python
@@ -158,7 +158,7 @@ There are a bit too much.It doesn't matter.Just let me introduce some of them.
 
 ##### info()
 
-我想你知道如何用 tkinter 制作接口，所以我就不介绍搭建 tkinter 接口的功能了。（真正的原因是我有点懒。<h5>译者注：看出来了</h5><br>
+我想你知道如何用 tkinter 制作接口，所以我就不介绍搭建 tkinter 接口的功能了。（真正的原因是我有点懒。<b>译者注：看出来了</b><br>
 
 现在我只介绍函数 info（）。先看一下代码：<br>
 

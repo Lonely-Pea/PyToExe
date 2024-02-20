@@ -1,7 +1,7 @@
 # PyToExe
 
-> (中文说明)![./README_CN.md] || (english)![./README.md]
-> 译者：@BiliBiliSmallball
+> <a herf="./README.md">中文说明</a> || <h5>english</h5>  
+> 译者：@BiliBiliSmallball  
 > Translated by @BiliBiliSmallball
 
 ## Introduction
