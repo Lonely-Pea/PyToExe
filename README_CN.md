@@ -1,72 +1,73 @@
 # PyToExe
 
-> [中文说明](./README_CN.md) || **English**  
+> **中文说明** || [English](./README.md)  
 > 译者：@BiliBiliSmallball  
 > Translated by @BiliBiliSmallball
 
-## Introduction
+## 软件总览
 
-PyToExe is software based on Python.<br>
-It can help you package python files into executable programs.<br>
-And it provides a interface that you can just click to package python files.<br>
-It calls pyinstaller and nuitka to help packaging your files.<br>
-Now the lauguage of the software is Chinese 'cause the maker is from China.(So this file may have a lot of grammar mistakes.)<br>
-Now you still cannot change the display lauguage 'cuase I'v not set a lauguage file.<br>
-Just Wait.<br>
+PyToExe 是基于 Python 的软件。<br>
+它可以帮助您将 python 文件打包成可执行程序。<br>
+它提供了一个 GUI 界面，用于自定义打包，您只需单击即可打包 python 文件。<br>
+本软件调用 pyinstaller 和 nuitka 来帮助打包文件。<br>
+现在该软件的用途是中文的，因为作者和译者来自中国。（所以这个文件可能有很多语法错误。<br>
+现在，您仍然无法更改显示语言，因为我没有进行语言的配置。<br>
+请等待我们的更新<br>
 
-## Principle
+## 工作原理与介绍
 
-The interface of the software is based on Python module tkinter.<br>
-To package python files into executable programs, it calls pyinstaller or nuitka.<br>
+该软件基于 Python 模块 tkinter 进行构建。<br>
+要将 python 文件打包成可执行程序，它会调用 pyinstaller 或 nuitka。<br>
 
-## Code Explanation
+## 代码说明
 
-### Modules Needed
+### 需要的模块
 
-Here is all the modules this program need and their purposes:<br>
+以下是该程序所需的所有模块及其用途：<br>  
+|包|用途|
+|:---|:---|
+|tkinter|interface based|
+|tkinter.messagebox|message popup|
+|tkinter.ttk|interface based|
+|os|system orders called|
+|time|animation needed|
+|threading|more threads builded|
+|random|random number made|
 
-| modules            | purposes             |
-| :----------------- | :------------------- |
-| tkinter            | interface based      |
-| tkinter.messagebox | message popup        |
-| tkinter.ttk        | interface based      |
-| os                 | system orders called |
-| time               | animation needed     |
-| threading          | more threads builded |
-| random             | random number made   |
+### self_builede 模块
 
-### self_builede Modules
+以下是所有自建模块及其用途：<br>
 
-Here is all the self-builded modules and their purposes:<br>
-
-| modules  | purposes          |
+| 模块     | 用途              |
 | :------- | :---------------- |
 | constant | constant saved    |
 | option   | interface builded |
 | function | packaging         |
 
-### How To Run the Program
+### 如何使用该程序
 
-To run this program,you need to run file main.py
+点击 `main.py`使用
+
+<h5>为啥这个项目不打包一下？</h5>
 
 ### File main.py
 
-In file main.py,we use these codes to build the interface and functions:<br>
+在模块 `main.py`中,我们使用这些代码来构建接口和函数:<br>
 
 ```python
 if __name__ == "__main__":
-  window = Window()  # build root window
-  desktop = Desktop(master=window)  # build interface
+  window = Window()  # 创建主窗口
+  desktop = Desktop(master=window)  #创建接口
 
-  window.mainloop()  # display the root window
+  window.mainloop()  #显示主窗口
 ```
 
-Variable _window_ is the earth for all the things work on.
+变量 _window_ 是所有功能实现的基础变量。如需更改功能请在对象 window 中更改或添加相关属性
 
 ### File constant.py
 
-In file constant.py,I write some variables into it.<br>
-Like this:<br>
+在项目`constant.py`中,我写了一些参数设置在里面.<br>
+比如:<br>
 
 ```python
 INSTALL_TEXT = [
@@ -75,18 +76,18 @@ INSTALL_TEXT = [
 ]
 ```
 
-These strings are to install pyinstaller and nuitka for packaging.<br>
+这些字符串用于安装 pyinstaller 和 nuitka 进行打包。<br>
 
-### File function.py
+### function.py
 
-In file function.py,we build a function:<br>
+在文件 function.py 中，我们构建一个函数<br>
 
-> make_file(file_from_path, file_output_path="", file_icon_path="", tool="pyinstaller", module="Basic", if_python=False, one_file=(False, True),
-> if_cmd=(False, False))
+> make_file（file_from_path， file_output_path=“”， file_icon_path=“”， tool=“pyinstaller”， module=“Basic”， if_python=False， one_file=（False， True），
+> if_cmd=（False，False））
 
-to build executable programs.<br>
-We just convert parameters into codes and rutuen final result _test_<br>
-Like this:<br>
+以构建可执行程序。<br>
+我们只是将参数转换为代码并查看最终结果`*test*`<br>
+例如：
 
 ```python
 text = ""
@@ -98,9 +99,9 @@ if tool == COMBOBOX_TEXT[1][1]:  # pyinstaller called
 
 ### File option.py
 
-In file option.py,we build the interface of the program.The place with the most codes is just here.<br>
+在文件 option.py 中，我们构建程序的接口。代码最多的地方就在这里。<br>
 
-Here is all the class and their purposes in the file:<br>
+以下是文件中的所有类及其用途：<br>
 
 | class                      | purposes               |
 | :------------------------- | :--------------------- |
@@ -111,9 +112,9 @@ Here is all the class and their purposes in the file:<br>
 
 #### Window(tk.Tk)
 
-In this class, there is a function called set(self) that can set the root window.
+在这个类中，有一个名为 `set(self)` 的函数可以设置根窗口。
 
-Here are the explanations of the codes:<br>
+以下是代码的解释：<br>
 
 ```python
 self.screenwidth = self.winfo_screenwidth()
@@ -123,13 +124,13 @@ self.y = (self.screenheight - WINDOW_HEIGHT) / 2
 self.size = "%dx%d+%d+%d" % (WINDOW_WIDTH, WINDOW_HEIGHT, self.x, self.y)
 ```
 
-Get the width and the height of the screen:
+通过以下属性确定程序窗口位置：
 
 > self.screenwidth = self.winfo_screenwidth()
 >
 > self.screenheight = self.winfo_screenheight()
 
-Get the x coordinate and y coordinate:
+通过以下属性确定程序窗口的大小：
 
 > self.x = (self.screenwidth - WINDOW_WIDTH) / 2
 >
@@ -137,9 +138,9 @@ Get the x coordinate and y coordinate:
 
 #### Desktop(tk.Frame)
 
-In this class, also the-most-code-written place, we build the main interface.<br>
+在这个类中，也是代码编写最多的地方，我们构建了主界面。<br>
 
-Here is all the functions that are called in \_\_init\_\_(self, master) ,the functions these functions called in this class, the variable globalized in there functions and the variable there functions needed:<br>
+以下是在 `init(self， master)` 中调用的所有函数，这些函数在此类中调用的函数，变量 globalized in there 函数和变量 there 函数需要：<br>
 
 | function                       | function called                                                                             | variable globalized | variable needed                                                                 |
 | :----------------------------- | :------------------------------------------------------------------------------------------ | :------------------ | :------------------------------------------------------------------------------ |
@@ -153,22 +154,21 @@ Here is all the functions that are called in \_\_init\_\_(self, master) ,the fun
 | install()                      | /                                                                                           | /                   | /                                                                               |
 | info()                         | self.change_info_label()                                                                    | /                   | /                                                                               |
 
-There are a bit too much.It doesn't matter.Just let me introduce some of them.
+有点太多了(我翻着也累啊)。但是这不重要（嗯嘛啊？！）。让我介绍其中的一些就好。（嘎达！扣透挖路！）
 
 ##### info()
 
-I think you know how to make interface by tkinter, so I won't introduce the functions of building tkinter interface.(The true reason is that I'm a bit lazy.)<br>
+我想你知道如何用 tkinter 制作接口，所以我就不介绍搭建 tkinter 接口的功能了。（真正的原因是我有点懒。<b>译者注：看出来了</b><br>
 
-Now I only introduce the Function info().Look at the codes first:<br>
+现在我只介绍函数` info()`。先看一下代码：<br>
+~~~
+thread_change = Thread(target=self.change_info_label, args=())
+thread_change.start()
+~~~
+这些代码是为了构建一个 now 线程，使主程序不会停滞（？）。
 
-> thread_change = Thread(target=self.change_info_label, args=())
->
-> thread_change.start()
-
-These codes are to build a now thread to make the main program not getting caton.
-
-We know this function called a new function called self.change_info_label().<br>
-Then let we just check out this function.<br>
+我们得到这个函数叫做一个名为 `self.change_info_label()` 的新函数。<br>
+然后让我们看看这个函数。<br>
 
 ###### self.change_info_label()
 
@@ -185,39 +185,52 @@ while True:
     time.sleep(10)
 ```
 
-Look at the codes above.<br>
-We first make a temporary variable called _n_.<br>
-Then, we build a _while_ circulate.<br>
-In this circulate, we first make a random number as the index of the list.<br>
-If the random number \_n\__ is as same as \_n_, we just "while" again.<br>
-Then we use the index to choose the element in the list and take it as the element of the variable self.entry_var.<br>
-Then, we use the module time and its function sleep() to pause the thread for 10 seconds.<br>
-Then, the next "while" again.<br>
-It is not difficult if you now a little of python grammar.<br>
+看看上面的代码。<br>
+我们首先制作一个名为 _n_ 的临时变量。<br>
+然后，我们建立一个 _while_ 循环。<br>
+在这个循环中，我们首先选取一个随机数作为列表的索引。<br>
+如果随机数 _n\_\_ 与 \_n_ 相同，我们再次“while”。<br>
+然后我们使用索引来选择列表中的元素，并将其作为变量 self.entry_var 的元素。<br>
+然后，我们使用模块 time 及其函数 sleep（） 将线程暂停 10 秒。<br>
+然后，下一个“while”再次出现。<br>
+如果你现在有基础的 python 语法，这并不难。<br>
 
 #### ToplevelAbout(tk.Toplevel) and ToplevelInfo(tk.Toplevel)
 
-As you know, they are seem to be same.So I just choose one of them for the introduction.<br>
+如您所知（+4），它们几乎是一样的。所以此处我只选择其中之一作为介绍。<br>
 
-Building window is like the steps in class Window(tk.Tk)<br>
-building label to show the about information is a bit easy.
+构建窗口类似于 Window（tk.Tk）<br>
+利用 Lable 控件来显示信息明显更加容易
 
-Something we need to know is that we can change the value of the element justify in the class tk.Label().<br>
-Like this:<br>
+我们可以更改` tk 类`中元素的`justify`属性的值来改变标签内容。<br>
+例如:<br>
+~~~
+text = tk.Label(self, text=ABOUT_TEXT, justify="left")
 
-> text = tk.Label(self, text=ABOUT_TEXT, justify="left")
->
-> text.place(x=0, y=0, width=TOPLEVEL_WIDTH \* 3)
+text.place(x=0, y=0, width=TOPLEVEL_WIDTH \* 3)
+~~~<br>
+以下是 _justify_ 和 _anchor_ 的区别：<br>
 
-Here are the differences of _justify_ and _anchor_:<br>
-
-| element | value                                              | purpose      |
+| 元素    | 预设值                                             | 类别         |
 | :------ | :------------------------------------------------- | :----------- |
 | justify | left<br>right<br>center<br>                        | For lines    |
 | anchor  | e<br>w<br>n<br>s<br>ne<br>se<br>nw<br>sw<br>center | for one line |
 
-Here are the means of the possible values of the element _anchor_:<br>
-|value|mean|
+以下列表指出了控件在 `_anchor_` 魔法方法中所拥有的位置：
+
+```python
+if **name** == "**main**":
+  import sys
+  my_app = QtWidgets.QApplication(sys.argv)
+  MainWindow = QtWidgets.QMainWindow()
+  ui = Ui_MainWindow()
+  ui.setupUi(MainWindow)
+  MainWindow.show()
+  sys.exit(my_app.exec())
+```
+
+属性如下:<br>
+|参数名|指向方向|
 |:---|:---|
 |e|East|
 |w|West|
@@ -229,9 +242,9 @@ Here are the means of the possible values of the element _anchor_:<br>
 |sw|southwest|
 |center|center|
 
-## Download
+## 下载
 
-### Codes Downloaded
+### 代码下载
 
 1. Github:
 1. [Codes on Github(the lastest)](https://github.com/Lonely-Pea/PyToExe.git "Click to download")
@@ -239,32 +252,32 @@ Here are the means of the possible values of the element _anchor_:<br>
 1. [PyToExe Build 230804 v1.0.0](https://wwcs.lanzouy.com/ifvRo14rzrlg "Click to download")
 1. [PyToExe Build 230813 v1.1.0](https://wwcs.lanzouy.com/iAy9f15ajtsd "Click to download")
 
-### Executable Porgrams Downloaded
+### 版本下载地址
 
 1. Lanzouy:
 1. [PyToExe Build 230804 v1.0.0](https://wwcs.lanzouy.com/ib5RM14rzs9a "Click to download")
 1. [PyToExe Build 230813 v1.1.0](https://wwcs.lanzouy.com/iInhb15ajusj "Click to download")
 
-## PyToExe Official Website
+## PyToExe 项目主页
 
 [PyToExe Official Website](https://lonely-pea.github.io/PyToExeWeb "Click to go to")
 
-## Bug Feedback
+## Bug 反馈
 
-Send email to <lonely-pea@qq.com> to give bug feedback or your suggestions.
-If you don't get something well, you can also ask me by sending email to this mainbox.
+向 <lonely-pea@qq.com> 发送电子邮件以提供错误反馈或您的建议。
+如果你没有得到什么（笑），你也可以通过向这个邮箱箱发送电子邮件来问我。
 
-## Software Screenshot
+## 项目截图
 
-Here are the screenshots of this software(version: Build 230813 v1.1.0):<br>
+H 首先是该软件的屏幕截图（来自版本：Build 230813 v1.1.0）:<br>
 ![Screenshot_1](Screenshot/screenshot_1.png "Main interface")
 
 ![Screenshot_2](Screenshot/screenshot_2.png "About interface")
 
 ![Screenshot_3](Screenshot/screenshot_3.png "Help interface")
 
-## thanks
+## 特别鸣谢
 
-Thank Lonely-Pea for programming.<br>
-Thank Everybody who give supports for this program.<br>
-Could you star it if you think it is a excellent program?<br>
+感谢 Lonely-Pea 的编程，以及@BiliBiliSmallball 的翻译<br>
+感谢所有支持该计划的人。<br>
+如果你认为这是一个优秀的项目，你能给它右上角单击 star 吗？<br>
