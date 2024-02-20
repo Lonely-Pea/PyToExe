@@ -140,7 +140,7 @@ self.size = "%dx%d+%d+%d" % (WINDOW_WIDTH, WINDOW_HEIGHT, self.x, self.y)
 
 在这个类中，也是代码编写最多的地方，我们构建了主界面。<br>
 
-以下是在 **init**（self， master） 中调用的所有函数，这些函数在此类中调用的函数，变量 globalized in there 函数和变量 there 函数需要：<br>
+以下是在 `init(self， master)` 中调用的所有函数，这些函数在此类中调用的函数，变量 globalized in there 函数和变量 there 函数需要：<br>
 
 | function                       | function called                                                                             | variable globalized | variable needed                                                                 |
 | :----------------------------- | :------------------------------------------------------------------------------------------ | :------------------ | :------------------------------------------------------------------------------ |
@@ -154,7 +154,7 @@ self.size = "%dx%d+%d+%d" % (WINDOW_WIDTH, WINDOW_HEIGHT, self.x, self.y)
 | install()                      | /                                                                                           | /                   | /                                                                               |
 | info()                         | self.change_info_label()                                                                    | /                   | /                                                                               |
 
-There are a bit too much.It doesn't matter.Just let me introduce some of them.
+有点太多了(我翻着也累啊)。但是这不重要（嗯嘛啊？！）。让我介绍其中的一些就好。（嘎达！扣透挖路！）
 
 ##### info()
 
@@ -217,14 +217,20 @@ while True:
 | justify | left<br>right<br>center<br>                        | For lines    |
 | anchor  | e<br>w<br>n<br>s<br>ne<br>se<br>nw<br>sw<br>center | for one line |
 
-以下列表指出了控件在 `_anchor_` 魔法方法中所拥有的位置 if **name** == "**main**":
-import sys
-my*app = QtWidgets.QApplication(sys.argv)
-MainWindow = QtWidgets.QMainWindow()
-ui = Ui_MainWindow()
-ui.setupUi(MainWindow)
-MainWindow.show()
-sys.exit(my_app.exec*())属性:<br>
+以下列表指出了控件在 `_anchor_` 魔法方法中所拥有的位置：
+
+```python
+if **name** == "**main**":
+  import sys
+  my_app = QtWidgets.QApplication(sys.argv)
+  MainWindow = QtWidgets.QMainWindow()
+  ui = Ui_MainWindow()
+  ui.setupUi(MainWindow)
+  MainWindow.show()
+  sys.exit(my_app.exec())
+```
+
+属性如下:<br>
 |参数名|指向方向|
 |:---|:---|
 |e|East|
@@ -260,7 +266,7 @@ sys.exit(my_app.exec*())属性:<br>
 ## Bug 反馈
 
 向 <lonely-pea@qq.com> 发送电子邮件以提供错误反馈或您的建议。
-如果你没有得到什么，你也可以通过向这个主箱发送电子邮件来问我。
+如果你没有得到什么（笑），你也可以通过向这个邮箱箱发送电子邮件来问我。
 
 ## 项目截图
 
@@ -275,4 +281,4 @@ H 首先是该软件的屏幕截图（来自版本：Build 230813 v1.1.0）:<br>
 
 感谢 Lonely-Pea 的编程，以及@BiliBiliSmallball 的翻译<br>
 感谢所有支持该计划的人。<br>
-如果你认为这是一个优秀的节目，你能给它右上角单击星标吗？<br>
+如果你认为这是一个优秀的项目，你能给它右上角单击 star 吗？<br>
