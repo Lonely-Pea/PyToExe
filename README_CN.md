@@ -1,30 +1,30 @@
 # PyToExe
 
-> **ÖÐÎÄËµÃ÷** || [English](./README.md)  
-> ÒëÕß£º@BiliBiliSmallball  
+> **ä¸­æ–‡è¯´æ˜Ž** || [English](./README.md)  
+> è¯‘è€…ï¼š@BiliBiliSmallball  
 > Translated by @BiliBiliSmallball
 
-## Èí¼þ×ÜÀÀ
+## è½¯ä»¶æ€»è§ˆ
 
-PyToExe ÊÇ»ùÓÚ Python µÄÈí¼þ¡£<br>
-Ëü¿ÉÒÔ°ïÖúÄú½« python ÎÄ¼þ´ò°ü³É¿ÉÖ´ÐÐ³ÌÐò¡£<br>
-ËüÌá¹©ÁËÒ»¸ö GUI ½çÃæ£¬ÓÃÓÚ×Ô¶¨Òå´ò°ü£¬ÄúÖ»Ðèµ¥»÷¼´¿É´ò°ü python ÎÄ¼þ¡£<br>
-±¾Èí¼þµ÷ÓÃ pyinstaller ºÍ nuitka À´°ïÖú´ò°üÎÄ¼þ¡£<br>
-ÏÖÔÚ¸ÃÈí¼þµÄÓÃÍ¾ÊÇÖÐÎÄµÄ£¬ÒòÎª×÷ÕßºÍÒëÕßÀ´×ÔÖÐ¹ú¡££¨ËùÒÔÕâ¸öÎÄ¼þ¿ÉÄÜÓÐºÜ¶àÓï·¨´íÎó¡£<br>
-ÏÖÔÚ£¬ÄúÈÔÈ»ÎÞ·¨¸ü¸ÄÏÔÊ¾ÓïÑÔ£¬ÒòÎªÎÒÃ»ÓÐ½øÐÐÓïÑÔµÄÅäÖÃ¡£<br>
-ÇëµÈ´ýÎÒÃÇµÄ¸üÐÂ<br>
+PyToExe æ˜¯åŸºäºŽ Python çš„è½¯ä»¶ã€‚<br>
+å®ƒå¯ä»¥å¸®åŠ©æ‚¨å°† python æ–‡ä»¶æ‰“åŒ…æˆå¯æ‰§è¡Œç¨‹åºã€‚<br>
+å®ƒæä¾›äº†ä¸€ä¸ª GUI ç•Œé¢ï¼Œç”¨äºŽè‡ªå®šä¹‰æ‰“åŒ…ï¼Œæ‚¨åªéœ€å•å‡»å³å¯æ‰“åŒ… python æ–‡ä»¶ã€‚<br>
+æœ¬è½¯ä»¶è°ƒç”¨ pyinstaller å’Œ nuitka æ¥å¸®åŠ©æ‰“åŒ…æ–‡ä»¶ã€‚<br>
+çŽ°åœ¨è¯¥è½¯ä»¶çš„ç”¨é€”æ˜¯ä¸­æ–‡çš„ï¼Œå› ä¸ºä½œè€…å’Œè¯‘è€…æ¥è‡ªä¸­å›½ã€‚ï¼ˆæ‰€ä»¥è¿™ä¸ªæ–‡ä»¶å¯èƒ½æœ‰å¾ˆå¤šè¯­æ³•é”™è¯¯ã€‚<br>
+çŽ°åœ¨ï¼Œæ‚¨ä»ç„¶æ— æ³•æ›´æ”¹æ˜¾ç¤ºè¯­è¨€ï¼Œå› ä¸ºæˆ‘æ²¡æœ‰è¿›è¡Œè¯­è¨€çš„é…ç½®ã€‚<br>
+è¯·ç­‰å¾…æˆ‘ä»¬çš„æ›´æ–°<br>
 
-## ¹¤×÷Ô­ÀíÓë½éÉÜ
+## å·¥ä½œåŽŸç†ä¸Žä»‹ç»
 
-¸ÃÈí¼þ»ùÓÚ Python Ä£¿é tkinter ½øÐÐ¹¹½¨¡£<br>
-Òª½« python ÎÄ¼þ´ò°ü³É¿ÉÖ´ÐÐ³ÌÐò£¬Ëü»áµ÷ÓÃ pyinstaller »ò nuitka¡£<br>
+è¯¥è½¯ä»¶åŸºäºŽ Python æ¨¡å— tkinter è¿›è¡Œæž„å»ºã€‚<br>
+è¦å°† python æ–‡ä»¶æ‰“åŒ…æˆå¯æ‰§è¡Œç¨‹åºï¼Œå®ƒä¼šè°ƒç”¨ pyinstaller æˆ– nuitkaã€‚<br>
 
-## ´úÂëËµÃ÷
+## ä»£ç è¯´æ˜Ž
 
-### ÐèÒªµÄÄ£¿é
+### éœ€è¦çš„æ¨¡å—
 
-ÒÔÏÂÊÇ¸Ã³ÌÐòËùÐèµÄËùÓÐÄ£¿é¼°ÆäÓÃÍ¾£º<br>  
-|°ü|ÓÃÍ¾|
+ä»¥ä¸‹æ˜¯è¯¥ç¨‹åºæ‰€éœ€çš„æ‰€æœ‰æ¨¡å—åŠå…¶ç”¨é€”ï¼š<br>  
+|åŒ…|ç”¨é€”|
 |:---|:---|
 |tkinter|interface based|
 |tkinter.messagebox|message popup|
@@ -34,40 +34,40 @@ PyToExe ÊÇ»ùÓÚ Python µÄÈí¼þ¡£<br>
 |threading|more threads builded|
 |random|random number made|
 
-### self_builede Ä£¿é
+### self_builede æ¨¡å—
 
-ÒÔÏÂÊÇËùÓÐ×Ô½¨Ä£¿é¼°ÆäÓÃÍ¾£º<br>
+ä»¥ä¸‹æ˜¯æ‰€æœ‰è‡ªå»ºæ¨¡å—åŠå…¶ç”¨é€”ï¼š<br>
 
-| Ä£¿é     | ÓÃÍ¾              |
+| æ¨¡å—     | ç”¨é€”              |
 | :------- | :---------------- |
 | constant | constant saved    |
 | option   | interface builded |
 | function | packaging         |
 
-### ÈçºÎÊ¹ÓÃ¸Ã³ÌÐò
+### å¦‚ä½•ä½¿ç”¨è¯¥ç¨‹åº
 
-µã»÷ `main.py`Ê¹ÓÃ
+ç‚¹å‡» `main.py`ä½¿ç”¨
 
-<h5>ÎªÉ¶Õâ¸öÏîÄ¿²»´ò°üÒ»ÏÂ£¿</h5>
+<h5>ä¸ºå•¥è¿™ä¸ªé¡¹ç›®ä¸æ‰“åŒ…ä¸€ä¸‹ï¼Ÿ</h5>
 
 ### File main.py
 
-ÔÚÄ£¿é `main.py`ÖÐ,ÎÒÃÇÊ¹ÓÃÕâÐ©´úÂëÀ´¹¹½¨½Ó¿ÚºÍº¯Êý:<br>
+åœ¨æ¨¡å— `main.py`ä¸­,æˆ‘ä»¬ä½¿ç”¨è¿™äº›ä»£ç æ¥æž„å»ºæŽ¥å£å’Œå‡½æ•°:<br>
 
 ```python
 if __name__ == "__main__":
-  window = Window()  # ´´½¨Ö÷´°¿Ú
-  desktop = Desktop(master=window)  #´´½¨½Ó¿Ú
+  window = Window()  # åˆ›å»ºä¸»çª—å£
+  desktop = Desktop(master=window)  #åˆ›å»ºæŽ¥å£
 
-  window.mainloop()  #ÏÔÊ¾Ö÷´°¿Ú
+  window.mainloop()  #æ˜¾ç¤ºä¸»çª—å£
 ```
 
-±äÁ¿ _window_ ÊÇËùÓÐ¹¦ÄÜÊµÏÖµÄ»ù´¡±äÁ¿¡£ÈçÐè¸ü¸Ä¹¦ÄÜÇëÔÚ¶ÔÏó window ÖÐ¸ü¸Ä»òÌí¼ÓÏà¹ØÊôÐÔ
+å˜é‡ _window_ æ˜¯æ‰€æœ‰åŠŸèƒ½å®žçŽ°çš„åŸºç¡€å˜é‡ã€‚å¦‚éœ€æ›´æ”¹åŠŸèƒ½è¯·åœ¨å¯¹è±¡ window ä¸­æ›´æ”¹æˆ–æ·»åŠ ç›¸å…³å±žæ€§
 
 ### File constant.py
 
-ÔÚÏîÄ¿`constant.py`ÖÐ,ÎÒÐ´ÁËÒ»Ð©²ÎÊýÉèÖÃÔÚÀïÃæ.<br>
-±ÈÈç:<br>
+åœ¨é¡¹ç›®`constant.py`ä¸­,æˆ‘å†™äº†ä¸€äº›å‚æ•°è®¾ç½®åœ¨é‡Œé¢.<br>
+æ¯”å¦‚:<br>
 
 ```python
 INSTALL_TEXT = [
@@ -76,18 +76,18 @@ INSTALL_TEXT = [
 ]
 ```
 
-ÕâÐ©×Ö·û´®ÓÃÓÚ°²×° pyinstaller ºÍ nuitka ½øÐÐ´ò°ü¡£<br>
+è¿™äº›å­—ç¬¦ä¸²ç”¨äºŽå®‰è£… pyinstaller å’Œ nuitka è¿›è¡Œæ‰“åŒ…ã€‚<br>
 
 ### function.py
 
-ÔÚÎÄ¼þ function.py ÖÐ£¬ÎÒÃÇ¹¹½¨Ò»¸öº¯Êý<br>
+åœ¨æ–‡ä»¶ function.py ä¸­ï¼Œæˆ‘ä»¬æž„å»ºä¸€ä¸ªå‡½æ•°<br>
 
-> make_file£¨file_from_path£¬ file_output_path=¡°¡±£¬ file_icon_path=¡°¡±£¬ tool=¡°pyinstaller¡±£¬ module=¡°Basic¡±£¬ if_python=False£¬ one_file=£¨False£¬ True£©£¬
-> if_cmd=£¨False£¬False£©£©
+> make_fileï¼ˆfile_from_pathï¼Œ file_output_path=â€œâ€ï¼Œ file_icon_path=â€œâ€ï¼Œ tool=â€œpyinstallerâ€ï¼Œ module=â€œBasicâ€ï¼Œ if_python=Falseï¼Œ one_file=ï¼ˆFalseï¼Œ Trueï¼‰ï¼Œ
+> if_cmd=ï¼ˆFalseï¼ŒFalseï¼‰ï¼‰
 
-ÒÔ¹¹½¨¿ÉÖ´ÐÐ³ÌÐò¡£<br>
-ÎÒÃÇÖ»ÊÇ½«²ÎÊý×ª»»Îª´úÂë²¢²é¿´×îÖÕ½á¹û`*test*`<br>
-ÀýÈç£º
+ä»¥æž„å»ºå¯æ‰§è¡Œç¨‹åºã€‚<br>
+æˆ‘ä»¬åªæ˜¯å°†å‚æ•°è½¬æ¢ä¸ºä»£ç å¹¶æŸ¥çœ‹æœ€ç»ˆç»“æžœ`*test*`<br>
+ä¾‹å¦‚ï¼š
 
 ```python
 text = ""
@@ -99,9 +99,9 @@ if tool == COMBOBOX_TEXT[1][1]:  # pyinstaller called
 
 ### File option.py
 
-ÔÚÎÄ¼þ option.py ÖÐ£¬ÎÒÃÇ¹¹½¨³ÌÐòµÄ½Ó¿Ú¡£´úÂë×î¶àµÄµØ·½¾ÍÔÚÕâÀï¡£<br>
+åœ¨æ–‡ä»¶ option.py ä¸­ï¼Œæˆ‘ä»¬æž„å»ºç¨‹åºçš„æŽ¥å£ã€‚ä»£ç æœ€å¤šçš„åœ°æ–¹å°±åœ¨è¿™é‡Œã€‚<br>
 
-ÒÔÏÂÊÇÎÄ¼þÖÐµÄËùÓÐÀà¼°ÆäÓÃÍ¾£º<br>
+ä»¥ä¸‹æ˜¯æ–‡ä»¶ä¸­çš„æ‰€æœ‰ç±»åŠå…¶ç”¨é€”ï¼š<br>
 
 | class                      | purposes               |
 | :------------------------- | :--------------------- |
@@ -112,9 +112,9 @@ if tool == COMBOBOX_TEXT[1][1]:  # pyinstaller called
 
 #### Window(tk.Tk)
 
-ÔÚÕâ¸öÀàÖÐ£¬ÓÐÒ»¸öÃûÎª set£¨self£© µÄº¯Êý¿ÉÒÔÉèÖÃ¸ù´°¿Ú¡£
+åœ¨è¿™ä¸ªç±»ä¸­ï¼Œæœ‰ä¸€ä¸ªåä¸º setï¼ˆselfï¼‰ çš„å‡½æ•°å¯ä»¥è®¾ç½®æ ¹çª—å£ã€‚
 
-ÒÔÏÂÊÇ´úÂëµÄ½âÊÍ£º<br>
+ä»¥ä¸‹æ˜¯ä»£ç çš„è§£é‡Šï¼š<br>
 
 ```python
 self.screenwidth = self.winfo_screenwidth()
@@ -124,13 +124,13 @@ self.y = (self.screenheight - WINDOW_HEIGHT) / 2
 self.size = "%dx%d+%d+%d" % (WINDOW_WIDTH, WINDOW_HEIGHT, self.x, self.y)
 ```
 
-Í¨¹ýÒÔÏÂÊôÐÔÈ·¶¨³ÌÐò´°¿ÚÎ»ÖÃ£º
+é€šè¿‡ä»¥ä¸‹å±žæ€§ç¡®å®šç¨‹åºçª—å£ä½ç½®ï¼š
 
 > self.screenwidth = self.winfo_screenwidth()
 >
 > self.screenheight = self.winfo_screenheight()
 
-Í¨¹ýÒÔÏÂÊôÐÔÈ·¶¨³ÌÐò´°¿ÚµÄ´óÐ¡£º
+é€šè¿‡ä»¥ä¸‹å±žæ€§ç¡®å®šç¨‹åºçª—å£çš„å¤§å°ï¼š
 
 > self.x = (self.screenwidth - WINDOW_WIDTH) / 2
 >
@@ -138,9 +138,9 @@ self.size = "%dx%d+%d+%d" % (WINDOW_WIDTH, WINDOW_HEIGHT, self.x, self.y)
 
 #### Desktop(tk.Frame)
 
-ÔÚÕâ¸öÀàÖÐ£¬Ò²ÊÇ´úÂë±àÐ´×î¶àµÄµØ·½£¬ÎÒÃÇ¹¹½¨ÁËÖ÷½çÃæ¡£<br>
+åœ¨è¿™ä¸ªç±»ä¸­ï¼Œä¹Ÿæ˜¯ä»£ç ç¼–å†™æœ€å¤šçš„åœ°æ–¹ï¼Œæˆ‘ä»¬æž„å»ºäº†ä¸»ç•Œé¢ã€‚<br>
 
-ÒÔÏÂÊÇÔÚ **init**£¨self£¬ master£© ÖÐµ÷ÓÃµÄËùÓÐº¯Êý£¬ÕâÐ©º¯ÊýÔÚ´ËÀàÖÐµ÷ÓÃµÄº¯Êý£¬±äÁ¿ globalized in there º¯ÊýºÍ±äÁ¿ there º¯ÊýÐèÒª£º<br>
+ä»¥ä¸‹æ˜¯åœ¨ **init**ï¼ˆselfï¼Œ masterï¼‰ ä¸­è°ƒç”¨çš„æ‰€æœ‰å‡½æ•°ï¼Œè¿™äº›å‡½æ•°åœ¨æ­¤ç±»ä¸­è°ƒç”¨çš„å‡½æ•°ï¼Œå˜é‡ globalized in there å‡½æ•°å’Œå˜é‡ there å‡½æ•°éœ€è¦ï¼š<br>
 
 | function                       | function called                                                                             | variable globalized | variable needed                                                                 |
 | :----------------------------- | :------------------------------------------------------------------------------------------ | :------------------ | :------------------------------------------------------------------------------ |
@@ -158,18 +158,18 @@ There are a bit too much.It doesn't matter.Just let me introduce some of them.
 
 ##### info()
 
-ÎÒÏëÄãÖªµÀÈçºÎÓÃ tkinter ÖÆ×÷½Ó¿Ú£¬ËùÒÔÎÒ¾Í²»½éÉÜ´î½¨ tkinter ½Ó¿ÚµÄ¹¦ÄÜÁË¡££¨ÕæÕýµÄÔ­ÒòÊÇÎÒÓÐµãÀÁ¡£<b>ÒëÕß×¢£º¿´³öÀ´ÁË</b><br>
+æˆ‘æƒ³ä½ çŸ¥é“å¦‚ä½•ç”¨ tkinter åˆ¶ä½œæŽ¥å£ï¼Œæ‰€ä»¥æˆ‘å°±ä¸ä»‹ç»æ­å»º tkinter æŽ¥å£çš„åŠŸèƒ½äº†ã€‚ï¼ˆçœŸæ­£çš„åŽŸå› æ˜¯æˆ‘æœ‰ç‚¹æ‡’ã€‚<b>è¯‘è€…æ³¨ï¼šçœ‹å‡ºæ¥äº†</b><br>
 
-ÏÖÔÚÎÒÖ»½éÉÜº¯Êý info£¨£©¡£ÏÈ¿´Ò»ÏÂ´úÂë£º<br>
+çŽ°åœ¨æˆ‘åªä»‹ç»å‡½æ•° infoï¼ˆï¼‰ã€‚å…ˆçœ‹ä¸€ä¸‹ä»£ç ï¼š<br>
 
 > thread_change = Thread(target=self.change_info_label, args=())
 >
 > thread_change.start()
 
-ÕâÐ©´úÂëÊÇÎªÁË¹¹½¨Ò»¸ö now Ïß³Ì£¬Ê¹Ö÷³ÌÐò²»»áÍ£ÖÍ£¨£¿£©¡£
+è¿™äº›ä»£ç æ˜¯ä¸ºäº†æž„å»ºä¸€ä¸ª now çº¿ç¨‹ï¼Œä½¿ä¸»ç¨‹åºä¸ä¼šåœæ»žï¼ˆï¼Ÿï¼‰ã€‚
 
-ÎÒÃÇµÃµ½Õâ¸öº¯Êý½Ð×öÒ»¸öÃûÎª self.change_info_label£¨£© µÄÐÂº¯Êý¡£<br>
-È»ºóÈÃÎÒÃÇ¿´¿´Õâ¸öº¯Êý¡£<br>
+æˆ‘ä»¬å¾—åˆ°è¿™ä¸ªå‡½æ•°å«åšä¸€ä¸ªåä¸º self.change_info_labelï¼ˆï¼‰ çš„æ–°å‡½æ•°ã€‚<br>
+ç„¶åŽè®©æˆ‘ä»¬çœ‹çœ‹è¿™ä¸ªå‡½æ•°ã€‚<br>
 
 ###### self.change_info_label()
 
@@ -186,46 +186,46 @@ while True:
     time.sleep(10)
 ```
 
-¿´¿´ÉÏÃæµÄ´úÂë¡£<br>
-ÎÒÃÇÊ×ÏÈÖÆ×÷Ò»¸öÃûÎª _n_ µÄÁÙÊ±±äÁ¿¡£<br>
-È»ºó£¬ÎÒÃÇ½¨Á¢Ò»¸ö _while_ Ñ­»·¡£<br>
-ÔÚÕâ¸öÑ­»·ÖÐ£¬ÎÒÃÇÊ×ÏÈÑ¡È¡Ò»¸öËæ»úÊý×÷ÎªÁÐ±íµÄË÷Òý¡£<br>
-Èç¹ûËæ»úÊý _n\_\_ Óë \_n_ ÏàÍ¬£¬ÎÒÃÇÔÙ´Î¡°while¡±¡£<br>
-È»ºóÎÒÃÇÊ¹ÓÃË÷ÒýÀ´Ñ¡ÔñÁÐ±íÖÐµÄÔªËØ£¬²¢½«Æä×÷Îª±äÁ¿ self.entry_var µÄÔªËØ¡£<br>
-È»ºó£¬ÎÒÃÇÊ¹ÓÃÄ£¿é time ¼°Æäº¯Êý sleep£¨£© ½«Ïß³ÌÔÝÍ£ 10 Ãë¡£<br>
-È»ºó£¬ÏÂÒ»¸ö¡°while¡±ÔÙ´Î³öÏÖ¡£<br>
-Èç¹ûÄãÏÖÔÚÓÐ»ù´¡µÄ python Óï·¨£¬Õâ²¢²»ÄÑ¡£<br>
+çœ‹çœ‹ä¸Šé¢çš„ä»£ç ã€‚<br>
+æˆ‘ä»¬é¦–å…ˆåˆ¶ä½œä¸€ä¸ªåä¸º _n_ çš„ä¸´æ—¶å˜é‡ã€‚<br>
+ç„¶åŽï¼Œæˆ‘ä»¬å»ºç«‹ä¸€ä¸ª _while_ å¾ªçŽ¯ã€‚<br>
+åœ¨è¿™ä¸ªå¾ªçŽ¯ä¸­ï¼Œæˆ‘ä»¬é¦–å…ˆé€‰å–ä¸€ä¸ªéšæœºæ•°ä½œä¸ºåˆ—è¡¨çš„ç´¢å¼•ã€‚<br>
+å¦‚æžœéšæœºæ•° _n\_\_ ä¸Ž \_n_ ç›¸åŒï¼Œæˆ‘ä»¬å†æ¬¡â€œwhileâ€ã€‚<br>
+ç„¶åŽæˆ‘ä»¬ä½¿ç”¨ç´¢å¼•æ¥é€‰æ‹©åˆ—è¡¨ä¸­çš„å…ƒç´ ï¼Œå¹¶å°†å…¶ä½œä¸ºå˜é‡ self.entry_var çš„å…ƒç´ ã€‚<br>
+ç„¶åŽï¼Œæˆ‘ä»¬ä½¿ç”¨æ¨¡å— time åŠå…¶å‡½æ•° sleepï¼ˆï¼‰ å°†çº¿ç¨‹æš‚åœ 10 ç§’ã€‚<br>
+ç„¶åŽï¼Œä¸‹ä¸€ä¸ªâ€œwhileâ€å†æ¬¡å‡ºçŽ°ã€‚<br>
+å¦‚æžœä½ çŽ°åœ¨æœ‰åŸºç¡€çš„ python è¯­æ³•ï¼Œè¿™å¹¶ä¸éš¾ã€‚<br>
 
 #### ToplevelAbout(tk.Toplevel) and ToplevelInfo(tk.Toplevel)
 
-ÈçÄúËùÖª£¨+4£©£¬ËüÃÇ¼¸ºõÊÇÒ»ÑùµÄ¡£ËùÒÔ´Ë´¦ÎÒÖ»Ñ¡ÔñÆäÖÐÖ®Ò»×÷Îª½éÉÜ¡£<br>
+å¦‚æ‚¨æ‰€çŸ¥ï¼ˆ+4ï¼‰ï¼Œå®ƒä»¬å‡ ä¹Žæ˜¯ä¸€æ ·çš„ã€‚æ‰€ä»¥æ­¤å¤„æˆ‘åªé€‰æ‹©å…¶ä¸­ä¹‹ä¸€ä½œä¸ºä»‹ç»ã€‚<br>
 
-¹¹½¨´°¿ÚÀàËÆÓÚ Window£¨tk.Tk£©<br>
-ÀûÓÃ Lable ¿Ø¼þÀ´ÏÔÊ¾ÐÅÏ¢Ã÷ÏÔ¸ü¼ÓÈÝÒ×
+æž„å»ºçª—å£ç±»ä¼¼äºŽ Windowï¼ˆtk.Tkï¼‰<br>
+åˆ©ç”¨ Lable æŽ§ä»¶æ¥æ˜¾ç¤ºä¿¡æ¯æ˜Žæ˜¾æ›´åŠ å®¹æ˜“
 
-ÎÒÃÇ¿ÉÒÔ¸ü¸Ä` tk Àà`ÖÐÔªËØµÄ`justify`ÊôÐÔµÄÖµÀ´¸Ä±ä±êÇ©ÄÚÈÝ¡£<br>
-ÀýÈç:<br>
+æˆ‘ä»¬å¯ä»¥æ›´æ”¹` tk ç±»`ä¸­å…ƒç´ çš„`justify`å±žæ€§çš„å€¼æ¥æ”¹å˜æ ‡ç­¾å†…å®¹ã€‚<br>
+ä¾‹å¦‚:<br>
 
 > text = tk.Label(self, text=ABOUT_TEXT, justify="left")
 >
 > text.place(x=0, y=0, width=TOPLEVEL_WIDTH \* 3)
 
-ÒÔÏÂÊÇ _justify_ ºÍ _anchor_ µÄÇø±ð£º<br>
+ä»¥ä¸‹æ˜¯ _justify_ å’Œ _anchor_ çš„åŒºåˆ«ï¼š<br>
 
-| ÔªËØ    | Ô¤ÉèÖµ                                             | Àà±ð         |
+| å…ƒç´     | é¢„è®¾å€¼                                             | ç±»åˆ«         |
 | :------ | :------------------------------------------------- | :----------- |
 | justify | left<br>right<br>center<br>                        | For lines    |
 | anchor  | e<br>w<br>n<br>s<br>ne<br>se<br>nw<br>sw<br>center | for one line |
 
-ÒÔÏÂÁÐ±íÖ¸³öÁË¿Ø¼þÔÚ `_anchor_` Ä§·¨·½·¨ÖÐËùÓµÓÐµÄÎ»ÖÃ if **name** == "**main**":
+ä»¥ä¸‹åˆ—è¡¨æŒ‡å‡ºäº†æŽ§ä»¶åœ¨ `_anchor_` é­”æ³•æ–¹æ³•ä¸­æ‰€æ‹¥æœ‰çš„ä½ç½® if **name** == "**main**":
 import sys
 my*app = QtWidgets.QApplication(sys.argv)
 MainWindow = QtWidgets.QMainWindow()
 ui = Ui_MainWindow()
 ui.setupUi(MainWindow)
 MainWindow.show()
-sys.exit(my_app.exec*())ÊôÐÔ:<br>
-|²ÎÊýÃû|Ö¸Ïò·½Ïò|
+sys.exit(my_app.exec*())å±žæ€§:<br>
+|å‚æ•°å|æŒ‡å‘æ–¹å‘|
 |:---|:---|
 |e|East|
 |w|West|
@@ -237,9 +237,9 @@ sys.exit(my_app.exec*())ÊôÐÔ:<br>
 |sw|southwest|
 |center|center|
 
-## ÏÂÔØ
+## ä¸‹è½½
 
-### ´úÂëÏÂÔØ
+### ä»£ç ä¸‹è½½
 
 1. Github:
 1. [Codes on Github(the lastest)](https://github.com/Lonely-Pea/PyToExe.git "Click to download")
@@ -247,32 +247,32 @@ sys.exit(my_app.exec*())ÊôÐÔ:<br>
 1. [PyToExe Build 230804 v1.0.0](https://wwcs.lanzouy.com/ifvRo14rzrlg "Click to download")
 1. [PyToExe Build 230813 v1.1.0](https://wwcs.lanzouy.com/iAy9f15ajtsd "Click to download")
 
-### °æ±¾ÏÂÔØµØÖ·
+### ç‰ˆæœ¬ä¸‹è½½åœ°å€
 
 1. Lanzouy:
 1. [PyToExe Build 230804 v1.0.0](https://wwcs.lanzouy.com/ib5RM14rzs9a "Click to download")
 1. [PyToExe Build 230813 v1.1.0](https://wwcs.lanzouy.com/iInhb15ajusj "Click to download")
 
-## PyToExe ÏîÄ¿Ö÷Ò³
+## PyToExe é¡¹ç›®ä¸»é¡µ
 
 [PyToExe Official Website](https://lonely-pea.github.io/PyToExeWeb "Click to go to")
 
-## Bug ·´À¡
+## Bug åé¦ˆ
 
-Ïò <lonely-pea@qq.com> ·¢ËÍµç×ÓÓÊ¼þÒÔÌá¹©´íÎó·´À¡»òÄúµÄ½¨Òé¡£
-Èç¹ûÄãÃ»ÓÐµÃµ½Ê²Ã´£¬ÄãÒ²¿ÉÒÔÍ¨¹ýÏòÕâ¸öÖ÷Ïä·¢ËÍµç×ÓÓÊ¼þÀ´ÎÊÎÒ¡£
+å‘ <lonely-pea@qq.com> å‘é€ç”µå­é‚®ä»¶ä»¥æä¾›é”™è¯¯åé¦ˆæˆ–æ‚¨çš„å»ºè®®ã€‚
+å¦‚æžœä½ æ²¡æœ‰å¾—åˆ°ä»€ä¹ˆï¼Œä½ ä¹Ÿå¯ä»¥é€šè¿‡å‘è¿™ä¸ªä¸»ç®±å‘é€ç”µå­é‚®ä»¶æ¥é—®æˆ‘ã€‚
 
-## ÏîÄ¿½ØÍ¼
+## é¡¹ç›®æˆªå›¾
 
-H Ê×ÏÈÊÇ¸ÃÈí¼þµÄÆÁÄ»½ØÍ¼£¨À´×Ô°æ±¾£ºBuild 230813 v1.1.0£©:<br>
+H é¦–å…ˆæ˜¯è¯¥è½¯ä»¶çš„å±å¹•æˆªå›¾ï¼ˆæ¥è‡ªç‰ˆæœ¬ï¼šBuild 230813 v1.1.0ï¼‰:<br>
 ![Screenshot_1](Screenshot/screenshot_1.png "Main interface")
 
 ![Screenshot_2](Screenshot/screenshot_2.png "About interface")
 
 ![Screenshot_3](Screenshot/screenshot_3.png "Help interface")
 
-## ÌØ±ðÃùÐ»
+## ç‰¹åˆ«é¸£è°¢
 
-¸ÐÐ» Lonely-Pea µÄ±à³Ì£¬ÒÔ¼°@BiliBiliSmallball µÄ·­Òë<br>
-¸ÐÐ»ËùÓÐÖ§³Ö¸Ã¼Æ»®µÄÈË¡£<br>
-Èç¹ûÄãÈÏÎªÕâÊÇÒ»¸öÓÅÐãµÄ½ÚÄ¿£¬ÄãÄÜ¸øËüÓÒÉÏ½Çµ¥»÷ÐÇ±êÂð£¿<br>
+æ„Ÿè°¢ Lonely-Pea çš„ç¼–ç¨‹ï¼Œä»¥åŠ@BiliBiliSmallball çš„ç¿»è¯‘<br>
+æ„Ÿè°¢æ‰€æœ‰æ”¯æŒè¯¥è®¡åˆ’çš„äººã€‚<br>
+å¦‚æžœä½ è®¤ä¸ºè¿™æ˜¯ä¸€ä¸ªä¼˜ç§€çš„èŠ‚ç›®ï¼Œä½ èƒ½ç»™å®ƒå³ä¸Šè§’å•å‡»æ˜Ÿæ ‡å—ï¼Ÿ<br>

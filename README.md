@@ -1,7 +1,7 @@
 # PyToExe
 
-> [中文说明](./README_CN.md) || **English**
-> 译者：@BiliBiliSmallball  
+> [涓枃璇存槑](./README_CN.md) || **English**
+> 璇戣�咃細@BiliBiliSmallball  
 > Translated by @BiliBiliSmallball
 
 ## Introduction
